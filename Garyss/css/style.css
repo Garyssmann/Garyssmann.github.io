@@ -76,7 +76,7 @@ body {
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 30px 0px;
 }
 .header__logo._active {
   transform: translate(0px, 0px);
@@ -88,15 +88,34 @@ body {
   font-size: 90px;
   font-weight: 900;
   color: #fff;
-  margin: 0px 0px 50px 0px;
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
+}
+.header__title:not(:last-child) {
+  margin: 0px 0px 30px 0px;
 }
 .header__title._active {
   transform: translate(0px, 0px);
   opacity: 1;
   transition: all 0.8s ease 0.4s;
+}
+.header__text {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.header__text:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+.header__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.6s;
 }
 
 .block {
@@ -175,9 +194,8 @@ body {
 }
 .footer {
   background: url("../img/booknote.jpg") 100% 100% / cover no-repeat fixed;
-
   position: relative;
-  height: 30vw;
+  height: 100%;
   width: 100%;
 }
 .footer::before {
@@ -185,19 +203,22 @@ body {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 30vw;
+  height: 100%;
 }
 .footer__social {
   position: relative;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 .footer__title {
+  position: relative;
   font-size: 30px;
   font-weight: 700;
   color: #fff;
   text-align: center;
   margin: 0px 0px 30px 0px;
+}
+.footer__title:not(:last-child) {
 }
 .footer__list {
   font-size: 20px;
@@ -208,6 +229,32 @@ body {
   color: inherit;
   margin: 0px 0px 20px 0px;
 }
+.footer__item:not(:last-child) {
+}
 .footer__link {
   color: inherit;
+}
+@media (max-width: 768px) {
+  .header {
+    height: 200vw;
+  }
+  .header__title {
+    font-size: 30px;
+  }
+  .header__text {
+    font-size: 20px;
+    margin: 0px 0px 50px 0px;
+  }
+  .block__title {
+    font-size: 30px;
+  }
+  .block__text {
+    font-size: 20px;
+  }
+  .block__item {
+    list-style: none;
+    font-size: 20px;
+  }
+  .footer {
+  }
 }
