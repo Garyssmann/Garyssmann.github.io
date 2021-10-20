@@ -78,7 +78,7 @@ body {
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
-  margin: 0px 0px 150px 0px;
+  margin: 0px 0px 50px 0px;
 }
 .header__logo._active {
   transform: translate(0px, 0px);
@@ -93,7 +93,7 @@ body {
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
-  margin: 0px 0px 150px 0px;
+  margin: 0px 0px 50px 0px;
 }
 .header__title:not(:last-child) {
 }
@@ -111,7 +111,7 @@ body {
   transition: all 0.8s ease 0s;
 }
 .header__text:not(:last-child) {
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 50px 0px;
 }
 .header__text._active {
   transform: translate(0px, 0px);
