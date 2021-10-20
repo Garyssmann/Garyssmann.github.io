@@ -57,7 +57,7 @@ body {
 .header {
   background: url("../img/laptop.jpg") 100% 100% / cover no-repeat fixed;
   padding: 50px 0;
-  min-height: 100vw;
+  min-height: 70vw;
   max-width: auto;
   position: relative;
   overflow: hidden;
