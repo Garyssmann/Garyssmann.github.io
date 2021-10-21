@@ -229,8 +229,30 @@ body {
 .footer__link {
   color: inherit;
 }
-
-@media (max-width: 500px) {
+@media (max-width: 992px) {
+  .header__title {
+    font-size: 50px;
+    margin: 0px 0px 50px 0px;
+  }
+  .header__text {
+    font-size: 30px;
+    margin: 0px 0px 50px 0px;
+  }
+  .block__title {
+    font-size: 30px;
+    margin: 0px 0px 50px 0px;
+  }
+  .block__text {
+    font-size: 20px;
+    margin: 0px 0px 50px 0px;
+  }
+  .block__item {
+    list-style: none;
+    font-size: 20px;
+    margin: 0px 0px 50px 0px;
+  }
+}
+@media (max-width: 768px) {
   .header__title {
     font-size: 30px;
     margin: 0px 0px 50px 0px;
