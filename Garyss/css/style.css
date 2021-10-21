@@ -207,13 +207,13 @@ body {
 }
 .footer__title {
   position: relative;
-  font-size: 30px;
   font-weight: 700;
   color: #fff;
   text-align: center;
-  margin: 0px 0px 30px 0px;
 }
 .footer__title:not(:last-child) {
+  font-size: 30px;
+  margin: 0px 0px 30px 0px;
 }
 .footer__list {
   font-size: 20px;
@@ -221,13 +221,17 @@ body {
   color: #fff;
 }
 .footer__item {
-  color: inherit;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 10px 20px 0px;
+  color: #fff;
 }
 .footer__item:not(:last-child) {
 }
 .footer__link {
-  color: inherit;
+  color: #fff;
+}
+.footer__icon {
+  width: 20px;
+  height: 20px;
 }
 @media (max-width: 992px) {
   .header__title {
