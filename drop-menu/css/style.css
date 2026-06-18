@@ -1,0 +1,81 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 150px;
+	color: #fff;
+}
+
+.box {
+	width: 350px;
+	text-align: center;
+}
+
+.menu {
+	text-transform: uppercase;
+	line-height: 0;
+	overflow: hidden;
+	color: transparent;
+	transition: line-height 0.5s, color 0.5s ease-in-out;
+	background-color: olive;
+}
+
+.button.active~.menu {
+	line-height: 1.2;
+	color: #fff;
+}
+
+.button {
+	background-color: olive;
+	text-transform: uppercase;
+	padding: 0.5lh 1.5lh;
+	inline-size: 100%;
+	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.button:hover,
+.button:focus-visible,
+.menu__link:hover,
+.menu__link:focus-visible {
+	background-color: olivedrab;
+
+}
+
+.menu__item {
+	overflow: hidden;
+}
+
+.menu__link {
+	display: block;
+	padding: 0.5lh 1.5lh;
+}
