@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gap: 1rem;
+}
+
+.list {
+  columns: 350px;
+  column-gap: var(--gap);
+  padding: calc(var(--gap) / 1.25);
+}
+
+.item {
+  margin-bottom: var(--gap);
+}
+
+.item img {
+  width: 100%;
+  display: block;
+
+
+}
+
+.item img:hover {
+  transform: scale(2);
+  transition: transform 0.7s ease;
+}
